@@ -1,0 +1,44 @@
+.footer {
+    width: 100%;
+    background-color: var(--color-primary);
+    height: 200px;
+    margin-top: calc(174px - 30px);
+}
+
+
+.container {
+    max-width: 87%;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container h5{
+    font-family: var(--font-secular-one);
+    font-size: 41.4736px;
+    line-height: 60px;
+    color: var(--color-white)
+}
+
+@media (max-width: 1250px){
+    .container h5{
+        font-size: 25.76px;
+        line-height: 37px;
+    }
+}
+
+@media (max-width: 580px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container h5{
+        order: 2;
+        margin-top: 8px;
+    }
+}

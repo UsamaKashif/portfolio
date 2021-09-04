@@ -1,0 +1,6 @@
+.btn{
+    height: auto;
+    padding: 8px;
+    color: var(--color-white);
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.tech{
+    width: 100%;
+    min-height: 160px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.container {
+    max-width: 87%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.techList{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    place-content: center;
+    width: 100%;
+}
+
+.container p {
+    color: var(--color-white);
+    font-family: var(--font-secular-one);
+    font-size: 41.4736px;
+    line-height: 60px;
+    min-width: 170px;
+}
+
+@media (max-width: 500px){
+    .container p {
+        font-size: 25.76px;
+        line-height: 37px;
+        width: 50%;
+        text-align: center;
+    }
+}
