@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <img className={styles.pattern} src="/pattern.svg" alt="pattern" />
+                <img className={styles.pattern} src="/images/pattern.svg" alt="pattern" />
                 <h1 className={styles.title}>
                     Hi, <br />
                     I am Usama Kashif, <br />
