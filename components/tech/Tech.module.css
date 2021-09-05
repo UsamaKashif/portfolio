@@ -40,16 +40,29 @@
 }
 
 @media (max-width: 586px){
-    .techList  {
+    .container  {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 586px){
+    .container {
+        display: grid;
+        text-align: center;
+        place-content: center;
+        grid-template-columns: auto auto;
+    }
+
+    .container p {
+        width: auto;
+    }
+}
+
+/* @media (max-width: 500px){
     .container p {
         width: 30%;
         text-align: center;
     }
-}
+} */
