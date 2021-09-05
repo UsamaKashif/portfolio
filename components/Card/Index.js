@@ -23,7 +23,7 @@ const Card = ({data}) => {
                 <div className={styles.btns}>
                     {
                         data.btns.map((btn, index) => (
-                            <Button color={btn.color} link={btn.link} type={btn.type} text={btn.text} />
+                            <Button color={btn.color} link={btn.link} key={index} type={btn.type} text={btn.text} />
                         ))
                     }
                 </div>
