@@ -30,7 +30,7 @@ const Card = ({data}) => {
                 <div className={styles.techUsedContainer}>
                     {
                         data.tech.map((tech, index) => (
-                            <TechUsed key={index} text={tech} key={index} />
+                            <TechUsed key={index} text={tech} />
                         ))
                     }
                 </div>
