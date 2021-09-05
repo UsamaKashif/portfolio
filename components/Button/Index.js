@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Button.module.css"
 
 
-const Button = ({color="primary", type="filled", text}) => {
+const Button = ({ color = "primary", type = "filled", text , link}) => {
     const bgColor = {
         "primary": "#115D8C",
         "secondary": "#999ea3",
@@ -10,16 +10,19 @@ const Button = ({color="primary", type="filled", text}) => {
         "accent": "#F45B69"
     }
     return (
-        <div
-            style={{
-                backgroundColor: type === "stroked" ? "transparent" : bgColor[color],
-                border: type === "stroked" ? `1px solid ${bgColor[color]}`:0,
-                borderRadius: type === "rounded" ? "3px" : 0,
-            }}
-            className={styles.btn}
-        >
-            {text}
-        </div>
+            <div
+                onClick={() => {
+                    window.open(link, "_blank")
+                }}
+                style={{
+                    backgroundColor: type === "stroked" ? "transparent" : bgColor[color],
+                    border: type === "stroked" ? `1px solid ${bgColor[color]}` : 0,
+                    borderRadius: type === "rounded" ? "3px" : 0,
+                }}
+                className={styles.btn}
+            >
+                {text}
+            </div>
     )
 }
 

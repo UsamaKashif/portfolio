@@ -20,12 +20,7 @@
     flex-wrap: wrap;
 }
 
-.techList{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    place-content: center;
-    width: 100%;
-}
+
 
 .container p {
     color: var(--color-white);
@@ -35,11 +30,26 @@
     min-width: 170px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     .container p {
         font-size: 25.76px;
         line-height: 37px;
-        width: 50%;
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 586px){
+    .techList  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    .container p {
+        width: 30%;
         text-align: center;
     }
 }

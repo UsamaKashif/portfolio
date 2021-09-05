@@ -11,22 +11,28 @@ const TechUsed = ({text}) => {
     )
 }
 
-const Card = () => {
+const Card = ({data}) => {
     return (
         <div className={styles.cardContainer}>
             <section className={styles.imgSection}>
-                <img src="/images/clothgator.png" alt="clothgator.com" />
+                <img src={data.image} alt={data.about} />
             </section>
             <section className={styles.content}>
-                <h1>Clothgator.com</h1>
-                <p>Clothgator is a clothing aggregator based in Pakistan.</p>
+                <h1>{data.title}</h1>
+                <p>{data.about}</p>
                 <div className={styles.btns}>
-                    <Button color="accent" type="fill" text="View Demo" />
-                    <Button color="black" type="stroked" text="Github" />
+                    {
+                        data.btns.map((btn, index) => (
+                            <Button color={btn.color} link={btn.link} type={btn.type} text={btn.text} />
+                        ))
+                    }
                 </div>
                 <div className={styles.techUsedContainer}>
-                    <TechUsed text="Django" />
-                    <TechUsed text="Next JS" />
+                    {
+                        data.tech.map((tech, index) => (
+                            <TechUsed key={index} text={tech} key={index} />
+                        ))
+                    }
                 </div>
             </section>
         </div>
