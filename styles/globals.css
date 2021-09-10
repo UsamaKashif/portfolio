@@ -19,6 +19,8 @@ body {
   margin: 0;
   font-family: var(--font-montserrat);
   background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
